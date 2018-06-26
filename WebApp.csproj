@@ -1,7 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+    <TypeScriptCompilerBlocked>true</TypeScriptCompilerBlocked>
+    <PostBuildEvent>ng build --aot</PostBuildEvent>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>a2dd9580-5f51-414d-929f-d01c0dd38fa1</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
